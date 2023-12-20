@@ -1,77 +1,48 @@
 <script>
-	import { onMount } from 'svelte';
 
 	// Global var
-	let selectroLeftPosition = 11.296428680419922;
-	let text1Center = 0;
-	let text2Center = 0;
-	let text3Center = 0;
 	let text1Selected = 'selected';
 	let text2Selected = '';
 	let text3Selected = '';
 	let datasource = '';
 
 	const giveawayCommands = [
-		{ a: 'Create/Start', b: 'Start a giveaway in your guild!' },
-		{ a: 'Drop', b: 'Start a drop giveaway!' },
-		{ a: 'Edit', b: 'Edit an already running giveaway!' },
-		{ a: 'End', b: 'End an already running giveaway!' },
-		{ a: 'List', b: "List all the giveaway's running within this guild!" },
-		{ a: 'Pause', b: 'Pause an already running giveaway nh ' },
-		{ a: 'Reroll', b: 'Reroll an ended giveaway!' },
-		{ a: 'Resume', b: 'Resume a paused giveaway!' }
+		{ a: 'create/Start', b: 'Start a giveaway in your guild!' },
+		{ a: 'drop', b: 'Start a drop giveaway!' },
+		{ a: 'edit', b: 'Edit an already running giveaway!' },
+		{ a: 'end', b: 'End an already running giveaway!' },
+		{ a: 'list', b: "List all the giveaway's running within this guild!" },
+		{ a: 'pause', b: 'Pause an already running giveaway nh ' },
+		{ a: 'reroll', b: 'Reroll an ended giveaway!' },
+		{ a: 'resume', b: 'Resume a paused giveaway!' }
 	];
 
 	const generalCommands = [
-		{ a: 'Help', b: 'Shows all available commands to this bot!' },
-		{ a: 'Invite', b: 'Get the bots invite link!' },
-		{ a: 'Ping', b: 'Check the bots web-socket latency!' }
+		{ a: 'help', b: 'Shows all available commands to this bot!' },
+		{ a: 'invite', b: 'Get the bots invite link!' },
+		{ a: 'ping', b: 'Check the bots web-socket latency!' }
 	];
 
 	datasource = generalCommands.concat(giveawayCommands);
 
 	// default position
-
-	function calculateCenter() {
-		const All = document.getElementById('All');
-		if (All) {
-			const rect = All.getBoundingClientRect();
-			text1Center = rect.left + rect.width / 2 - 50;
-			selectroLeftPosition = text1Center;
-		}
-
-		const Giveaway = document.getElementById('Giveaway');
-		if (Giveaway) {
-			const rect = Giveaway.getBoundingClientRect();
-			text2Center = rect.left + rect.width / 2 - 50;
-		}
-		const General = document.getElementById('General');
-		if (General) {
-			const rect = General.getBoundingClientRect();
-			text3Center = rect.left + rect.width / 2 - 50;
-		}
-	}
-
 	// Button push handling
 	function focus(a) {
 		console.log();
 		switch (a) {
 			case 0:
-				selectroLeftPosition = text1Center;
 				text1Selected = 'selected';
 				text2Selected = '';
 				text3Selected = '';
 				datasource = generalCommands.concat(giveawayCommands);
 				break;
 			case 1:
-				selectroLeftPosition = text2Center;
 				text2Selected = 'selected';
 				text3Selected = '';
 				text1Selected = '';
 				datasource = giveawayCommands;
 				break;
 			case 2:
-				selectroLeftPosition = text3Center;
 				text3Selected = 'selected';
 				text2Selected = '';
 				text1Selected = '';
@@ -79,10 +50,6 @@
 				break;
 		}
 	}
-
-	onMount(() => {
-		calculateCenter();
-	});
 </script>
 
 <header>
@@ -95,7 +62,6 @@
 	<button on:click={() => focus(2)}>
 		<p id="General" class={text3Selected}>General</p>
 	</button>
-	<img src="/backgroundSelector.svg" alt="" style="left: {selectroLeftPosition}px;" />
 </header>
 <article>
 	<ul>
@@ -127,6 +93,7 @@
 	}
 	header {
 		display: flex;
+		position: relative;
 		color: #fff;
 		padding-left: 50px;
 		font-family: Montserrat;
