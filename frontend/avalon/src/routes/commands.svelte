@@ -7,7 +7,7 @@
 	let datasource = '';
 
 	const giveawayCommands = [
-		{ a: 'create/Start', b: 'Start a giveaway in your guild!' },
+		{ a: 'create | start', b: 'Start a giveaway in your guild!' },
 		{ a: 'drop', b: 'Start a drop giveaway!' },
 		{ a: 'edit', b: 'Edit an already running giveaway!' },
 		{ a: 'end', b: 'End an already running giveaway!' },
@@ -102,12 +102,6 @@
 		line-height: normal;
 	}
 
-	header > img {
-		position: absolute;
-		top: 14.2px;
-		z-index: -1;
-		transition: left 0.2s ease; /* Apply transition to the left property */
-	}
 
 	.selected {
 		font-weight: 600;
@@ -139,5 +133,7 @@
 	li {
 		margin-top: 35px;
 		margin-bottom: 35px;
+		border-bottom: 1px solid #ccc; /* Border at the bottom of each item */
+  		padding: 10px;
 	}
 </style>

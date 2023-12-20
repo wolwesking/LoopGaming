@@ -5,11 +5,11 @@
 
 <Header ListActive="true" />
 
-<article class="commands-article">
+<article class="commands-article fade-transition">
 	<nav class="decoration-nav">
-		<img src="/decoration3.svg" alt="">
+		<img src="/decoration3.svg" alt="" />
 	</nav>
-	<div class="commands-container">
+	<div class="commands-container container">
 		<div class="commands-info">
 			<h1>Commands</h1>
 			<p class="optional-params">[ ] - optional parameters</p>
@@ -22,22 +22,22 @@
 				<p class="usage-detail grayDefault">g! [ command ]</p>
 				<p class="usage-detail grayDefault">/[command]</p>
 			</div>
-			<br>
+			<br />
 			<div class="usage-details">
-				<p class="usage-title purpleDefault">Usage</p>
-				<p class="usage-detail grayDefault">g! [ command ]</p>
-				<p class="usage-detail grayDefault">/[command]</p>
+				<p class="usage-title purpleDefault">Examples</p>
+				<p class="usage-detail grayDefault">g! help</p>
+				<p class="usage-detail grayDefault">/help</p>
 			</div>
+			<br />
+			<img src="/line.svg" alt="" />
 		</section>
 
 		<Commands />
 	</div>
 	<section class="decoration-section">
-		<img src="/decoration4.svg" alt="">
+		<img src="/decoration4.svg" alt="" />
 	</section>
 </article>
-
-
 
 <style>
 	* {
@@ -69,14 +69,13 @@
 		text-align: center;
 	}
 
-	article>div{
+	article > div {
 		width: 50rem;
 	}
 
-	article > div > div  {
+	article > div > div {
 		padding-top: 4px;
 	}
-	
 
 	section {
 		margin-top: 5rem;
@@ -109,7 +108,9 @@
 		justify-content: space-between;
 	}
 
-	.decoration-section{
+	.decoration-section {
 		margin-top: 40rem;
 	}
+
+
 </style>

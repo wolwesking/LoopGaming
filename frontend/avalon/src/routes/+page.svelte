@@ -8,7 +8,9 @@
 	<div>
 		<h1>Avalon</h1>
 		<p>Avalon is a reliable Discord Giveaway Bot designed to make hosting Giveaways a breeze.</p>
-		<button>Invite bot</button>
+		<button onclick="window.open('https://discord.com/api/oauth2/authorize?client_id=1066431310358380625&permissions=8&scope=applications.commands%20bot', '_blank');">Invite bot</button>
+		<button onclick="window.open('https://discord.gg/ARu4hr6hJw', '_blank')">Support server</button>
+
 	</div>
 	<div>
 		<img src="/logo.png" alt="" />
