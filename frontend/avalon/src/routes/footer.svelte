@@ -6,7 +6,7 @@
 				<div>
 					<a href="/about">About Us</a>
 					<a href="https://discord.gg/ARu4hr6hJw">Discord server</a>
-					<a href="mailto:#">Mail</a>
+					<a href="mailto:avalonbot@email.com					">Mail</a>
 					<!-- TODO add bot email -->
 				</div>
 			</section>
