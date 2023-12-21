@@ -5,9 +5,8 @@
 				<h1>Contact</h1>
 				<div>
 					<a href="/about">About Us</a>
-					<a href="https://discord.gg/ARu4hr6hJw">Discord server</a>
-					<a href="mailto:avalonbot@email.com					">Mail</a>
-					<!-- TODO add bot email -->
+					<a href="https://discord.gg/6heyUUREUP">Discord server</a>
+					<a href="mailto:avalonbot@email.com">Mail</a>
 				</div>
 			</section>
 
@@ -15,7 +14,6 @@
 				<h1>Terms</h1>
 				<div>
 					<a href="/terms">Terms of use</a>
-					<!-- TODO terms page -->
 				</div>
 			</section>
 		</div>
