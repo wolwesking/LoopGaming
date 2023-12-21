@@ -1,7 +1,0 @@
-{
-  "token": "{token}", 
-  "prefix": "g!",
-  "everyoneMention": false,
-  "hostedBy": true,
-  "reaction": "{emoji for reaction}"
-}
