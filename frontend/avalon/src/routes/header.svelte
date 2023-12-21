@@ -45,7 +45,8 @@
 		serverIconSrc = serverSrouce;
 	}
 </script>
-
+<!-- TODO dashboard -->
+<!-- TODO login -->
 <header>
 	<nav>
 		<a href="/">

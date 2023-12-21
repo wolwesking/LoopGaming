@@ -1,5 +1,6 @@
 <script>
 	import Header from '../header.svelte';
+	import Footer from '../footer.svelte';
 </script>
 
 <Header />
@@ -41,6 +42,9 @@
 		<img src="/decoration6.svg" alt="" />
 	</div>
 </section>
+<br>
+<br>
+<Footer />
 
 <style>
 	* {

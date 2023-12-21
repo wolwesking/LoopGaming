@@ -1,6 +1,8 @@
 <script>
 	import Header from '../header.svelte';
 	import Commands from '../commands.svelte';
+	import Footer from '../footer.svelte';
+	
 </script>
 
 <Header ListActive="true" />
@@ -38,7 +40,9 @@
 		<img src="/decoration4.svg" alt="" />
 	</section>
 </article>
-
+<br>
+<br>
+<Footer />
 <style>
 	* {
 		margin: 0%;
