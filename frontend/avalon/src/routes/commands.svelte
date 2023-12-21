@@ -1,5 +1,4 @@
 <script>
-
 	// Global var
 	let text1Selected = 'selected';
 	let text2Selected = '';
@@ -54,10 +53,10 @@
 
 <header>
 	<button on:click={() => focus(0)}>
-		<p id="All" class={text1Selected} style="margin-right: 53.5px;">All</p>
+		<p id="All" class={text1Selected} style="">All</p>
 	</button>
 	<button on:click={() => focus(1)}>
-		<p id="Giveaway" class={text2Selected} style="margin-right: 28px;>">Giveaway</p>
+		<p id="Giveaway" class={text2Selected} style="">Giveaway</p>
 	</button>
 	<button on:click={() => focus(2)}>
 		<p id="General" class={text3Selected}>General</p>
@@ -77,6 +76,12 @@
 <style>
 	* {
 		font-family: Montserrat;
+	}
+	#Giveaway {
+		margin-right: 28px;
+	}
+	#All{
+		margin-right: 53.5px;
 	}
 	button {
 		/* Reset all default button styles */
@@ -101,7 +106,6 @@
 		font-style: normal;
 		line-height: normal;
 	}
-
 
 	.selected {
 		font-weight: 600;
@@ -134,6 +138,30 @@
 		margin-top: 35px;
 		margin-bottom: 35px;
 		border-bottom: 1px solid #ccc; /* Border at the bottom of each item */
-  		padding: 10px;
+		padding: 10px;
+	}
+
+	@media only screen and (max-width: 600px) {
+		header {
+			padding-left: 0; /* Remove left padding */
+			flex-direction: column; /* Stack buttons vertically */
+			align-items: center; /* Center buttons */
+		}
+		button {
+			margin: 5px; /* Add some space between buttons */
+		}
+		article {
+			padding: 10px; /* Add padding to the article */
+		}
+		li {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		#Giveaway {
+			margin-right: 0px;
+		}
+		#All {
+			margin-right: 0px;
+		}
 	}
 </style>

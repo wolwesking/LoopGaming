@@ -72,4 +72,23 @@
 		justify-content: center;
 		
 	}
+
+	@media only screen and (max-width: 600px) {
+            article {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .text {
+                width: 75%;
+                margin-bottom: 1rem;
+            }
+            section > div {
+                align-items: center;
+                text-align: center;
+            }
+			img {
+				display: none;
+			}
+        }
 </style>

@@ -2,13 +2,12 @@
 	import Header from '../header.svelte';
 	import Commands from '../commands.svelte';
 	import Footer from '../footer.svelte';
-	
 </script>
 
 <Header ListActive="true" />
 
 <article class="commands-article fade-transition">
-	<nav class="decoration-nav">
+	<nav class="decoration-nav disable">
 		<img src="/decoration3.svg" alt="" />
 	</nav>
 	<div class="commands-container container">
@@ -36,14 +35,65 @@
 
 		<Commands />
 	</div>
-	<section class="decoration-section">
+	<section class="decoration-section disable">
 		<img src="/decoration4.svg" alt="" />
 	</section>
 </article>
-<br>
-<br>
+<br />
+<br />
 <Footer />
+
 <style>
+	@media screen and (max-width: 768px) {
+		article > div > div > h1 {
+			font-size: 28px;
+			margin-top: 4rem;
+		}
+		.disable{
+			display: none;
+		}
+		img{
+			display: none;
+		}
+		*{
+			text-align: center;
+		}
+
+		article > div > div > p {
+			font-size: 12px;
+			margin-top: 8px;
+		}
+		article{
+			display: flex;
+		}
+
+		.grayDefault {
+			font-size: 10px;
+		}
+
+		.purpleDefault {
+			font-size: 14px;
+		}
+
+		article > div {
+			width: 95%; /* Adjust width for smaller screens */
+			max-width: 90%; /* Limit max-width for smaller screens */
+		}
+
+		section {
+			margin-top: 2rem;
+			margin-bottom: 1rem;
+		}
+
+		.decoration-section {
+			margin-top: 15rem;
+		}
+		.commands-article{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
 	* {
 		margin: 0%;
 		color: var(--text, #fff);
@@ -115,6 +165,4 @@
 	.decoration-section {
 		margin-top: 40rem;
 	}
-
-
 </style>

@@ -9,9 +9,14 @@
 	<div>
 		<h1>Avalon</h1>
 		<p>Avalon is a reliable Discord Giveaway Bot designed to make hosting Giveaways a breeze.</p>
-		<button onclick="window.open('https://discord.com/api/oauth2/authorize?client_id=1066431310358380625&permissions=8&scope=applications.commands%20bot', '_blank');">Invite bot</button>
-		<button style="background-color: grey;" onclick="window.open('https://discord.gg/6heyUUREUP', '_blank')">Support server</button>
-
+		<button
+			onclick="window.open('https://discord.com/api/oauth2/authorize?client_id=1066431310358380625&permissions=8&scope=applications.commands%20bot', '_blank');"
+			>Invite bot</button
+		>
+		<button
+			style="background-color: grey;"
+			onclick="window.open('https://discord.gg/6heyUUREUP', '_blank')">Support server</button
+		>
 	</div>
 	<div>
 		<img src="/logo.png" alt="" />
@@ -41,30 +46,70 @@
 				<p>We have easy to use commands that are easy to understand!</p>
 				<a href="/commands">More</a>
 			</div>
-			<img src="/logo2.svg" alt="logo2" />
+			<img class="hide" src="/logo2.svg" alt="logo2" />
 		</div>
 		<div>
 			<img src="/logo3.svg" alt="logo3" />
 			<div>
 				<h1>Reliable Giveaways</h1>
-				<p>We have a reliable giveaway system that will fit your needs and that we promise that your giveaways are safe!</p>
+				<p>
+					We have a reliable giveaway system that will fit your needs and that we promise that your
+					giveaways are safe!
+				</p>
 				<a href="/commands">More</a>
 			</div>
 		</div>
 	</div>
 	<section>
-		<img src="/decoration2.svg" alt="decoration2" />
+		<img class="hide" src="/decoration2.svg" alt="decoration2" />
 	</section>
 </div>
 <!-- TODO Largest server -->
 
-<br>
-<br>
-<br>
-<br>
+<br />
+<br />
+<br />
+<br />
 <Footer />
+
 <style>
 	/* default */
+
+	@media only screen and (max-width: 768px) {
+		* {
+			text-align: center;
+		}
+		#joinTag {
+			flex-direction: column;
+			align-items: center;
+			gap: 0px;
+			
+		}
+
+		#joinTag > div > p {
+			max-width: 80%;
+		}
+
+		#joinTag > div > button {
+			padding: 0.5rem 1rem;
+			height: auto;
+		}
+
+		#functions > div > div {
+			gap: 1.5rem;
+		}
+
+		#functions > div > div > div > p {
+			max-width: 80%;
+		}
+		p {
+			text-align: center;
+		}
+		img {
+			display: none;
+		}
+
+	}
 	* {
 		margin: 0;
 		font-family: Montserrat;
@@ -87,7 +132,7 @@
 		justify-content: center;
 		align-items: center;
 		padding-top: 12vh;
-		gap: 14rem;
+		gap: 4rem;
 		margin-bottom: 2rem;
 	}
 
@@ -140,17 +185,16 @@
 		justify-content: space-around;
 		gap: 3.5rem;
 		max-width: 1000px;
-		
 	}
 
-	#functions > div > div > div> p {
-		color: #91A18F;
+	#functions > div > div > div > p {
+		color: #91a18f;
 		margin-top: 1.4rem;
 		margin-bottom: 1.4rem;
 		max-width: 600px;
 	}
-	#functions > div > div > div> a {
-		color: #4E1AE5;
+	#functions > div > div > div > a {
+		color: #4e1ae5;
 	}
 
 	#functions > nav {

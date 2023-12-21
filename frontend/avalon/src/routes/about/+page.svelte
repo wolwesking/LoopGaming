@@ -35,11 +35,11 @@
 		</div>
 		<div class="Creators-div">
 			<h3>Creators</h3>
-			<div>
+			<div class="flexDirRowSos">
 				<div>
 					<img src="loopPfp.png" alt="loop" />
 					<div>
-						<h2>Antimatter</h2>
+						<h2>loop_gaming</h2>
 						<p>Bot Developer</p>
 					</div>
 				</div>
@@ -70,6 +70,40 @@
 <Footer />
 
 <style>
+	@media only screen and (max-width: 768px) {
+		* {
+			text-align: center;
+		}
+		#left,
+		#right {
+			display: none;
+		}
+		.flexDirRowSos {
+			display: flex;
+			flex-direction: column;
+		}
+		h1 {
+			margin-top: 5rem; /* Adjust top margin for smaller screens */
+			font-size: 36px; /* Reduce font size */
+		}
+
+		h3 {
+			font-size: 24px; /* Reduce font size */
+		}
+
+		section {
+			gap: 2rem; /* Adjust spacing between sections */
+		}
+
+		.technology-div {
+			gap: 2rem; /* Adjust spacing between technologies */
+		}
+
+		.Creators-div {
+			margin-top: 3rem; /* Adjust top margin for creators */
+			margin-bottom: 3rem; /* Adjust bottom margin for creators */
+		}
+	}
 	* {
 		text-align: center;
 		color: #fff;
@@ -109,15 +143,14 @@
 		justify-content: space-around;
 	}
 
-	.Creators-div > div >div {
+	.Creators-div > div > div {
 		display: flex;
 		align-items: center;
 		gap: 20px;
 		margin-top: 1rem;
-
 	}
 
-	.Creators-div > div  {
+	.Creators-div > div {
 		display: flex;
 		justify-content: space-around;
 	}
@@ -136,7 +169,7 @@
 		margin-bottom: 6px;
 	}
 
-	.Creators-div > div > div >div > p {
+	.Creators-div > div > div > div > p {
 		color: var(--second-text, #91a18f);
 		font-family: Montserrat;
 		font-size: 16px;

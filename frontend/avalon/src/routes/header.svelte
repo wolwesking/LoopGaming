@@ -125,4 +125,22 @@
 		gap: 0.3rem;
 	}
 
+
+	@media only screen and (max-width: 600px) {
+            /* Mobile-specific styles */
+            nav {
+                flex-direction: column;
+                align-items: center;
+				gap: 0px;
+            }
+            .Pages {
+                margin-top: 1rem;
+            }
+            /* Adjust font size or padding as needed */
+            p {
+                font-size: 16px;
+                padding: 0.2rem;
+            }
+			
+        }
 </style>
